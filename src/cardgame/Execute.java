@@ -27,7 +27,7 @@ public class Execute
      public Deck GameDeck = new Deck();
      Player[] GamePlayer = new Player[4];
      Scanner myscanner = new Scanner(System.in);
-
+     
      public void Exectue()
      {
 
@@ -90,7 +90,7 @@ public class Execute
 
           //Deal the cards
           System.out.printf("Press enter to deal cards. \n");
-        myscanner.nextLine();
+//        myscanner.nextLine();
           PlayGame();
 
      }
@@ -98,10 +98,7 @@ public class Execute
      public void PlayGame()
      {
           
-          //pop off the top card from deck
-          System.out.printf("The top card in the deck is:\n", GameDeck.pop());
-          GameDeck.displayStack();
-          
+      
           Deal(GameDeck);
           
           System.out.printf("%s hand is:\n", GamePlayer[0].getPlayerName());
@@ -143,17 +140,17 @@ public class Execute
      public void Deal(Deck GameDeck)
      {
           
-          if (!GameDeck.isEmpty())
+          while (!GameDeck.isEmpty())
           {
-               
+
                for (int i = 0; i < GamePlayer.length; i++)
                {
                     GamePlayer[i].Hand.insert(GameDeck.pop());
-                    GamePlayer[i].Hand.DisplayQueue();
                }
           }
-
      }
+   
+    
      
      
      /**

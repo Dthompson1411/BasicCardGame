@@ -20,9 +20,9 @@ package cardgame;
  */
 public class Card extends CardData
 {
-     private int value;
-     private String face;
-     private String suit;
+     public int value;
+     public String face;
+     public String suit;
 
      /**
       * Initializes the Card object

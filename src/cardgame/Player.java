@@ -21,8 +21,10 @@ package cardgame;
 public class Player extends PriorityQueue
 {
      public String PlayerName;
-     public Queue Hand = new Queue();
+     public PriorityQueue Hand = new PriorityQueue();
+     public Queue PlayedHand = new Queue();
      public int Score;
+    
 
      public Player(String Name, Execute execute)
      {
@@ -50,28 +52,6 @@ public class Player extends PriorityQueue
      {
           return PlayerName;
      }
-
-     public Queue DisplayHand()
-     {
-          if (!this.Hand.isEmpty())
-          {
-               Hand.DisplayQueue();
-          }
-          return Hand;
-     }
-     
-     public Queue DisplayPlayer()
-     {
-          for (int i =0; i< PlayerName.length(); i++)
-          {
-               System.out.printf("%s %s", this.getPlayerName(),  Hand);
-          }
-          return Hand;
-     }
-     /**
-      * Displays the Card objects in the player's Hand.
-      */
-     
      
 }
 

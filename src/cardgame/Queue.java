@@ -111,8 +111,10 @@ public class Queue implements Queueable
      * @return The Card object that was removed.
      */
     @Override
-    public Card remove() { // Method is not used in this program
-        return null;
+    public Card remove()
+    { 
+          // Method is not used in this program
+          return null;
     }
     
     /**

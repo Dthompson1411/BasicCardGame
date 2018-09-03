@@ -61,7 +61,7 @@ public class PriorityQueue implements Queueable
           else
           {
                Node temp = front;
-               while (temp != null && node.getCard().getValue() > temp.getCard().getValue())
+               while (temp != null && node.getCard().getValue() < temp.getCard().getValue())
                {
                     temp = temp.getNext();
                }
