@@ -1,12 +1,8 @@
 /*
  * Author: David Thompson
- * Course: COP2551
- * Semester: Spring 2016
- * Project #:
- * Title:
- * Due Date:
  * 
- * Description:
+ *  * 
+ * Description: Programmed for experience in writing code.
  * 
  * 
  * 
@@ -26,7 +22,8 @@ public class CardGame
       */
      public static void main(String[] args)
      {
-          // TODO code application logic here
+          //Call the entry point of the game
+          new Execute().Exectue();
      }
      
 }
