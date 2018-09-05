@@ -33,10 +33,10 @@ public class Stack implements Stackable
      {
           Node temp = top;
 
-          System.out.print("\nDeck: ");
+//          System.out.print("\nDeck: ");
           while (temp != null)
           {
-               System.out.format("%s ", temp.getCard());
+               System.out.format("%s", temp.getCard());
                temp = temp.getNext();
           }
           System.out.println();
